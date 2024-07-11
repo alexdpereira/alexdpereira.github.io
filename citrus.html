@@ -46,7 +46,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             text-align: center; /* Centraliza o conteúdo das seções */
         }
-        .doenca, .imagem-iframe {
+        .doenca {
             border: 1px solid #333;
             padding: 1em;
             margin: 2em 0;
@@ -54,9 +54,9 @@
             border-radius: 10px;
             text-align: center;
         }
-        .imagem-iframe img, .imagem-iframe iframe {
-            max-width: 100%; /* Máxima largura possível */
-            height: auto;
+        .doenca img {
+            max-width: 100%; /* Todas as imagens ocupam a largura máxima do contêiner */
+            height: auto; /* Altura automática para manter a proporção */
             display: block;
             margin: 0 auto;
             border-radius: 10px;
@@ -119,15 +119,15 @@
 
         /* Media query para ajustes em dispositivos móveis */
         @media (max-width: 768px) {
-            .doenca .imagem-iframe img {
-                max-width: 100%; /* Assegura que as imagens das doenças se ajustem ao tamanho da tela */
+            .doenca {
+                max-width: 90%; /* Limita a largura do contêiner das doenças para evitar que fiquem muito largas */
+                margin: 2em auto; /* Centraliza o contêiner das doenças na tela */
             }
-            #sobre img {
-                width: 250px; /* Reduz ligeiramente o tamanho da imagem do "Sobre Mim" */
-                height: 250px;
-            }
-            .social-icons img {
-                width: 25px; /* Reduz o tamanho dos ícones para telas menores */
+
+            /* Ajustes específicos para as imagens das doenças */
+            .doenca img {
+                max-width: calc(100vw - 30px); /* Ajuste para largura total menos margens */
+                height: auto;
             }
         }
     </style>
@@ -158,35 +158,35 @@
         <h2>Principais Doenças da Citricultura</h2>
         <div class="doenca">
             <h3>1. Greening (HLB)</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4gr_ex4HK2QtQDT6ONbDbPYMq_uULKDRIZezwej3Y7OvTk0i-Wjckccg&s=10" alt="Sintomas de Greening (HLB)" class="imagem-iframe">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4gr_ex4HK2QtQDT6ONbDbPYMq_uULKDRIZezwej3Y7OvTk0i-Wjckccg&s=10" alt="Sintomas de Greening (HLB)">
             <p><strong>Sintomas:</strong> Amarelecimento das folhas, frutos deformados e pequenos.</p>
             <p><strong>Causas:</strong> Bactéria Candidatus Liberibacter, transmitida pelo psilídeo Diaphorina citri.</p>
             <p><strong>Métodos de Controle:</strong> Monitoramento e controle do psilídeo, remoção de plantas infectadas.</p>
         </div>
         <div class="doenca">
             <h3>2. Cancro Cítrico</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThuFD1bZiOkZ0o9omDx_oApbVfu9gDwsrO1fQbTzL-V3_0ge6hyjKWkyk&s=10" alt="Sintomas de Cancro Cítrico" class="imagem-iframe">
-            <p><strong>Sintomas:</strong> Lesões elevadas e escuras nas folhas, frutos e ramos.</p>
-            <p><strong>Causas:</strong> Bactéria Xanthomonas citri.</p>
-            <p><strong>Métodos de Controle:</strong> Uso de mudas sadias, poda de ramos doentes, tratamento com cobre.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCO4KPNHnjRsjlIUGdHcG964e8P4aFIdJqrQ&s" alt="Sintomas de Cancro Cítrico">
+            <p><strong>Sintomas:</strong> Lesões necróticas em folhas, ramos e frutos.</p>
+            <p><strong>Causas:</strong> Bactéria Xanthomonas citri subsp. citri.</p>
+            <p><strong>Métodos de Controle:</strong> Remoção de ramos doentes, tratamento com cobre.</p>
         </div>
         <div class="doenca">
             <h3>3. Podridão Floral</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJgnMpPLSapr2D5XjY3Je-m2XxddAealYdMA&usqp=CAU" alt="Sintomas de Podridão Floral" class="imagem-iframe">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJgnMpPLSapr2D5XjY3Je-m2XxddAealYdMA&usqp=CAU" alt="Sintomas de Podridão Floral">
             <p><strong>Sintomas:</strong> Murchamento e queda das flores, frutos com podridão.</p>
             <p><strong>Causas:</strong> Fungos Colletotrichum spp.</p>
             <p><strong>Métodos de Controle:</strong> Tratamento com fungicidas, manejo adequado de irrigação.</p>
         </div>
         <div class="doenca">
             <h3>4. Pinta Preta</h3>
-            <img src="https://www.fundecitrus.com.br/img/noticias/081ZFUNDECITRUSZPintaZPretaZ05082016ZBrunaZSantos_PhotoH.jpg" alt="Sintomas de Mancha Preta" class="imagem-iframe">
+            <img src="https://www.fundecitrus.com.br/img/noticias/081ZFUNDECITRUSZPintaZPretaZ05082016ZBrunaZSantos_PhotoH.jpg" alt="Sintomas de Mancha Preta">
             <p><strong>Sintomas:</strong> Pequenas manchas pretas nas folhas e frutos.</p>
             <p><strong>Causas:</strong> Fungos Guignardia citricarpa.</p>
             <p><strong>Métodos de Controle:</strong> Pulverização com fungicidas, eliminação de frutos, ramos secos e folhas infectadas.</p>
         </div>
         <div class="doenca">
             <h3>5. Leprose</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfkBwABNuiASrpt3WSDVHiBGuxBYtwQ9exYQ&usqp=CAU" alt="Sintomas de Leprose" class="imagem-iframe">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfkBwABNuiASrpt3WSDVHiBGuxBYtwQ9exYQ&usqp=CAU" alt="Sintomas de Leprose">
             <p><strong>Sintomas:</strong> Lesões cloróticas nas folhas e frutos.</p>
             <p><strong>Causas:</strong> Vírus Citrus leprosis virus, transmitido pelo ácaro Brevipalpus phoenicis.</p>
             <p><strong>Métodos de Controle:</strong> Controle do ácaro vetor, eliminação de plantas infectadas.</p>
@@ -227,3 +227,4 @@
     </footer>
 </body>
 </html>
+
