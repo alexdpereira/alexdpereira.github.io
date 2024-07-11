@@ -55,7 +55,7 @@
             text-align: center;
         }
         .imagem-iframe img, .imagem-iframe iframe {
-            width: 100%;
+            max-width: 100%; /* Máxima largura possível */
             height: auto;
             display: block;
             margin: 0 auto;
@@ -97,9 +97,6 @@
             height: 300px;
             object-fit: cover; /* Evita distorção da imagem */
         }
-        #sobre h2 {
-            text-align: center;
-        }
 
         /* Estilo para os ícones de redes sociais */
         .social-icons {
@@ -112,7 +109,7 @@
             transition: transform 0.3s ease-in-out;
         }
         .social-icons img {
-            width: 30px; /* Ajuste o tamanho dos ícones conforme desejado */
+            width: 30px; /* Tamanho inicial dos ícones */
             height: auto;
             border-radius: 50%; /* Manter bordas arredondadas */
         }
@@ -122,6 +119,13 @@
 
         /* Media query para ajustes em dispositivos móveis */
         @media (max-width: 768px) {
+            .doenca .imagem-iframe img {
+                max-width: 100%; /* Assegura que as imagens das doenças se ajustem ao tamanho da tela */
+            }
+            #sobre img {
+                width: 250px; /* Reduz ligeiramente o tamanho da imagem do "Sobre Mim" */
+                height: 250px;
+            }
             .social-icons img {
                 width: 25px; /* Reduz o tamanho dos ícones para telas menores */
             }
@@ -164,7 +168,7 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThuFD1bZiOkZ0o9omDx_oApbVfu9gDwsrO1fQbTzL-V3_0ge6hyjKWkyk&s=10" alt="Sintomas de Cancro Cítrico" class="imagem-iframe">
             <p><strong>Sintomas:</strong> Lesões elevadas e escuras nas folhas, frutos e ramos.</p>
             <p><strong>Causas:</strong> Bactéria Xanthomonas citri.</p>
-            <p><strong>Métodos de Controle:</strong> Uso de mudas sadias, pulverizações de cobre, eliminação de plantas infectadas.</p>
+            <p><strong>Métodos de Controle:</strong> Uso de mudas sadias, poda de ramos doentes, tratamento com cobre.</p>
         </div>
         <div class="doenca">
             <h3>3. Podridão Floral</h3>
@@ -175,10 +179,10 @@
         </div>
         <div class="doenca">
             <h3>4. Pinta Preta</h3>
-            <img src="https://www.fundecitrus.com.br/img/noticias/081ZFUNDECITRUSZPintaZPretaZ05082016ZBrunaZSantos_PhotoH.jpg" alt="Sintomas de Pinta Preta" class="imagem-iframe">
+            <img src="https://www.fundecitrus.com.br/img/noticias/081ZFUNDECITRUSZPintaZPretaZ05082016ZBrunaZSantos_PhotoH.jpg" alt="Sintomas de Mancha Preta" class="imagem-iframe">
             <p><strong>Sintomas:</strong> Pequenas manchas pretas nas folhas e frutos.</p>
             <p><strong>Causas:</strong> Fungos Guignardia citricarpa.</p>
-            <p><strong>Métodos de Controle:</strong> Pulverização com fungicidas, eliminação de frutos e folhas infectadas.</p>
+            <p><strong>Métodos de Controle:</strong> Pulverização com fungicidas, eliminação de frutos, ramos secos e folhas infectadas.</p>
         </div>
         <div class="doenca">
             <h3>5. Leprose</h3>
@@ -223,4 +227,3 @@
     </footer>
 </body>
 </html>
-
