@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citricultura - Pragas e Doenças</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1E1E1E;
+            color: #00FF7F;
+            padding: 2em 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #00FF7F;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFFFFF;
+        }
+        section {
+            padding: 3em 2em;
+            background-color: #1E1E1E;
+            margin: 1em 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center; /* Centraliza o conteúdo das seções */
+        }
+        .doenca, .imagem-iframe {
+            border: 1px solid #333;
+            padding: 1em;
+            margin: 2em 0;
+            background-color: #2E2E2E;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .imagem-iframe img, .imagem-iframe iframe {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            background-color: #1E1E1E;
+            color: #00FF7F;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Estilo adicional para ajustar o tamanho do iframe */
+        .iframe-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* Proporção de 16:9 para o iframe */
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Estilo para centralizar imagem e título da seção Sobre Mim */
+        #sobre img {
+            display: block;
+            margin: 0 auto 1em; /* Centraliza a imagem */
+            border-radius: 50%; /* Bordas arredondadas para a imagem circular */
+            width: 300px; /* Ajuste o tamanho conforme necessário */
+            height: 300px;
+            object-fit: cover; /* Evita distorção da imagem */
+        }
+        #sobre h2 {
+            text-align: center;
+        }
+
+        /* Estilo para os ícones de redes sociais */
+        .social-icons {
+            margin-top: 1em;
+        }
+        .social-icons a {
+            margin: 0 0.5em;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 40px; /* Ajuste o tamanho dos ícones conforme desejado */
+            height: auto;
+            border-radius: 50%; /* Manter bordas arredondadas */
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Citricultura - Pragas e Doenças</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#doencas">Doenças</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#blog">Blog</a>
+        <a href="#clima">Clima</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <section id="home">
+        <h2>Bem-vindo ao meu site sobre Citricultura</h2>
+        <p>Este site é dedicado a compartilhar informações sobre as principais doenças que afetam a citricultura e os métodos de controle eficazes.</p>
+    </section>
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <img src="https://media.licdn.com/dms/image/D4D22AQFizzHYItk6vA/feedshare-shrink_800/0/1717692785516?e=2147483647&v=beta&t=zxLMVz8LYIjUK4VVH3EmGQTusWHQvpOGfMk8m8uvBFs" alt="Minha Foto" class="imagem-iframe">
+        <p>Sou Engenheiro Agrônomo, com Pós-Graduação em Fitopatologia. Possuo uma iniciação científica pela EMBRAPA, atualmente estou realizando uma especialização em fitossanidade dos Citros na Fundecitrus, sou Técnico Agrícola e sou habilitado para emissão de CFO/CFOc.</p>
+    </section>
+    <section id="doencas">
+        <h2>Principais Doenças da Citricultura</h2>
+        <div class="doenca">
+            <h3>1. Greening (HLB)</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4gr_ex4HK2QtQDT6ONbDbPYMq_uULKDRIZezwej3Y7OvTk0i-Wjckccg&s=10" alt="Sintomas de Greening (HLB)" class="imagem-iframe">
+            <p><strong>Sintomas:</strong> Amarelecimento das folhas, frutos deformados e pequenos.</p>
+            <p><strong>Causas:</strong> Bactéria Candidatus Liberibacter, transmitida pelo psilídeo Diaphorina citri.</p>
+            <p><strong>Métodos de Controle:</strong> Monitoramento e controle do psilídeo, remoção de plantas infectadas.</p>
+        </div>
+        <div class="doenca">
+            <h3>2. Cancro Cítrico</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThuFD1bZiOkZ0o9omDx_oApbVfu9gDwsrO1fQbTzL-V3_0ge6hyjKWkyk&s=10" alt="Sintomas de Cancro Cítrico" class="imagem-iframe">
+            <p><strong>Sintomas:</strong> Lesões elevadas e escuras nas folhas, frutos e ramos.</p>
+            <p><strong>Causas:</strong> Bactéria Xanthomonas citri.</p>
+            <p><strong>Métodos de Controle:</strong> Uso de mudas sadias, pulverizações de cobre, eliminação de plantas infectadas.</p>
+        </div>
+        <div class="doenca">
+            <h3>3. Podridão Floral</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJgnMpPLSapr2D5XjY3Je-m2XxddAealYdMA&usqp=CAU" alt="Sintomas de Podridão Floral" class="imagem-iframe">
+            <p><strong>Sintomas:</strong> Murchamento e queda das flores, frutos com podridão.</p>
+            <p><strong>Causas:</strong> Fungos Colletotrichum spp.</p>
+            <p><strong>Métodos de Controle:</strong> Tratamento com fungicidas, manejo adequado de irrigação.</p>
+        </div>
+        <div class="doenca">
+            <h3>4. Mancha Preta</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8b8l0OhQYefD8_LxJSoK5I3Ux9q_S6e-pqT4Wv8xK3BQxX37Qu0iofV8&s=10" alt="Sintomas de Mancha Preta" class="imagem-iframe">
+            <p><strong>Sintomas:</strong> Pequenas manchas pretas nas folhas e frutos.</p>
+            <p><strong>Causas:</strong> Fungos Guignardia citricarpa.</p>
+            <p><strong>Métodos de Controle:</strong> Pulverização com fungicidas, eliminação de frutos e folhas infectadas.</p>
+        </div>
+        <div class="doenca">
+            <h3>5. Leprose</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfkBwABNuiASrpt3WSDVHiBGuxBYtwQ9exYQ&usqp=CAU" alt="Sintomas de Leprose" class="imagem-iframe">
+            <p><strong>Sintomas:</strong> Lesões cloróticas nas folhas e frutos.</p>
+            <p><strong>Causas:</strong> Vírus Citrus leprosis virus, transmitido pelo ácaro Brevipalpus phoenicis.</p>
+            <p><strong>Métodos de Controle:</strong> Controle do ácaro vetor, eliminação de plantas infectadas.</p>
+        </div>
+    </section>
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <p>Aqui estão alguns dos projetos e pesquisas que desenvolvi na área de citricultura.</p>
+        <p>Em desenvolvimento!!</p>
+    </section>
+    <section id="blog">
+        <h2>Avalia Psilídeo - Fundecitrus</h2>
+        <div class="imagem-iframe">
+            <div class="iframe-container">
+                <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNDE1NmFhYzQtZDBmZi00MjQwLWI4ZGEtOTViNTlkZmYzZDIxIiwidCI6ImUzODU0MTM3LWVmMDMtNDU5Ni05M2QwLWIxM2MyMTk4MTU1ZSJ9" frameborder="0"></iframe>
+            </div>
+        </div>
+        <p>Aqui você encontrará o Avalia Psilídeo, aplicativo desenvolvido pela Fundecitrus, contendo os principais inseticidas com eficácia acima de 80% no controle do psilídeo.</p>
+    </section>
+    <section id="clima">
+        <h2>Clima, Temperatura e Precipitação</h2>
+        <div class="imagem-iframe">
+            <div class="iframe-container">
+                <iframe src="https://www.climatempo.com.br" frameborder="0"></iframe>
+            </div>
+        </div>
+        <p>Utilize o radar do Clima Tempo para acompanhar as condições climáticas, temperatura e precipitação de chuva na sua região.</p>
+    </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <div class="social-icons">
+            <a href="https://wa.me/17992621412" target="_blank" rel="noopener noreferrer"><img src="https://i.pinimg.com/originals/6e/2c/f9/6e2cf920c73d260231a7cb8a16933486.png" alt="WhatsApp"></a>
+            <a href="https://www.linkedin.com/in/alexaparecidopereira/" target="_blank" rel="noopener noreferrer"><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="LinkedIn"></a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Citricultura - Pragas e Doenças. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
