@@ -104,19 +104,27 @@
         /* Estilo para os ícones de redes sociais */
         .social-icons {
             margin-top: 1em;
+            text-align: center; /* Centraliza os ícones */
         }
         .social-icons a {
-            margin: 0 0.5em;
+            margin: 0 10px; /* Espaçamento entre os ícones */
             display: inline-block;
+            transition: transform 0.3s ease-in-out;
         }
         .social-icons img {
-            width: 40px; /* Ajuste o tamanho dos ícones conforme desejado */
+            width: 30px; /* Ajuste o tamanho dos ícones conforme desejado */
             height: auto;
             border-radius: 50%; /* Manter bordas arredondadas */
-            transition: transform 0.3s ease-in-out;
         }
         .social-icons img:hover {
             transform: scale(1.1); /* Efeito de escala ao passar o mouse */
+        }
+
+        /* Media query para ajustes em dispositivos móveis */
+        @media (max-width: 768px) {
+            .social-icons img {
+                width: 25px; /* Reduz o tamanho dos ícones para telas menores */
+            }
         }
     </style>
 </head>
@@ -215,3 +223,4 @@
     </footer>
 </body>
 </html>
+
